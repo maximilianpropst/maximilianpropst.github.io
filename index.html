@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="tm5Y6ZNTf-lBqbwniGjQPv1q02o2TuUQZ9GTYa4SMLg" />
+  <title>Maximilian Propst - Personal website</title>
+
+  <meta name="description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta name="keywords" content="latex.css,css library,class-less css,latex css" />
+  <meta property="og:title" content="LaTeX.css" />
+  <meta property="og:url" content="https://latex.vercel.app" />
+  <meta property="og:description"
+    content="A minimal, almost class-less CSS library to write modern websites that look like LaTeX documents." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="prism/prism.css" />
+</head>
+
+<body id="top" class="latex-dark">
+  <header>
+    <h1>Maximilian Propst</h1>
+     <img
+    class="profile-pic"
+    src="pf.jpg"
+    alt="Maximilian Propst"
+     >
+    <p class="author">
+      Post-doctoral researcher <br />
+      University of Augsburg <br />
+      <a href="https://www.uni-augsburg.de/en/fakultaet/wiwi/prof/vwl/heer/team/maximilian-propst-eng/">Contact details and CV</a>
+    </p>
+  </header>
+
+  <div class="abstract">
+    <h2>About me</h2>
+    <p>
+      I am a post-doctoral researcher at the <a href="https://www.uni-augsburg.de/en/fakultaet/wiwi/prof/vwl/heer/">Chair of Public Economics</a>. My reseach is about household finance, wealth inequality and intergenerational mobility. 
+      I received my PhD from the <a href="https://www.ucy.ac.cy/econ/?lang=en">University of Cyprus</a> in June 2026.
+    </p>
+  </div>
+
+  <main>
+    <hr>
+    <article>
+      <h2>Working papers and work in progress</h2>
+      <ul>
+        <li>
+          <a href="https://www.bcl.lu/en/publications/Working-papers/211/BCLWP211.pdf"><b>A decision of a lifetime: Housing tenure choice under randomized prices.</b></a> (with Peter Lindner, Thomas Mathä, Giuseppe Pulina and Michael Ziegelmeyer)
+        </li>
+        <li>
+          <b>Social circumstances and inequality of opportunity.</b> (with Andros Kourtellos and Yiguo Sun)
+        </li>
+      </ul>
+
+      <h2>Publications</h2>
+      <ul>
+        <li>
+         Kourtellos, A., Propst, M., Sun, Y. (2026).  <b>Social curves: A spatial functional regression approach.</b> <i>Journal of Applied Econometrics</i>, accepted.
+        </li>
+        <li>
+          Propst, M. (2025). <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/roiw.70041"><b>(Im-)Patient social classes and their marginal propensity to consume out of wealth.</b></a>  <i>Review of Income and Wealth</i>, 71(4), e70041.
+        </li>
+         <li>
+          Dossche, M., Kolndrekaj, A., Propst, M., Ramos Perez, J., Slacalek, J., Vegh, M. (2024). <a href="https://www.sciencedirect.com/science/article/pii/S0161893824000206"><b>Immigration and the distribution of income, consumption and wealth in the euro area: Implications for economic policies.</b></a>  <i>Journal of Policy Modeling</i>, 46(5), 867-886. 
+        </li>
+      </ul>
+
+      <footer class="footer">
+  <p>
+    © 2026 Maximilian Propst
+  </p>
+
+  <p>
+    <a href="impressum.html">Impressum</a> |
+    <a href="datenschutz.html">Datenschutz</a>
+  </p>
+</footer>
+
+      <div class="footnotes">
+        <p>
+         Many thanks to Vincent Dörig for creating the <a href="https://latex.vercel.app">template</a> used for this website.
+        </p>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
+  <script async src="prism/prism.js"></script>
+
+</body>
+
+</html>
